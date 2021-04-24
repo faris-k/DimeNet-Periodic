@@ -4,7 +4,7 @@ This repository is a PyTorch version of [DimeNet++](https://github.com/klicperaj
 
 The focus of this work is to apply DimeNet's directional message-passing to periodic systems (inorganic crystals). Element embeddings are used as the only additional feature to DimeNet++, which normally uses just structural and compositional information to predict properties.
 
-Performance on predicting materials properties is done using the [Matbench benchmark dataset](https://hackingmaterials.lbl.gov/automatminer/datasets.html) for materials data.
+Materials data from the [Matbench benchmark dataset](https://hackingmaterials.lbl.gov/automatminer/datasets.html) is used to assess performance in predicting materials properties.
 
 This work was supported by funding from the Undergraduate Research Opportunities Program at the University of Utah. Please note that this is very much a work in progress.
 
