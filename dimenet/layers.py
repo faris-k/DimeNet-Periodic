@@ -89,7 +89,7 @@ class SphericalBasisLayer(Module):
         out = (rbf[idx_kj].view(-1, n, k) * cbf.view(-1, n, 1)).view(-1, n * k)
         return out
 
-
+# Embeddings from https://github.com/anthony-wang/CrabNet/blob/master/crabnet/kingcrab.py
 class Embedder(Module):
     def __init__(self,
                  d_model,
