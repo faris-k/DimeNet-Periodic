@@ -1,4 +1,4 @@
-# DimeNet-Periodic
+# Directional Message Passing Neural Network (DimeNet) Applied to Periodic Structures
 
 This repository is a PyTorch version of [DimeNet++](https://github.com/klicperajo/dimenet). It is based on the [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric) implementation of DimeNet with a few corrections and updates from the TensorFlow repo to reflect the status of DimeNet++.
 
