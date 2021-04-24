@@ -3,8 +3,8 @@ from __future__ import unicode_literals
 import sympy as sym
 import torch
 
-from layers import (BesselBasisLayer, SphericalBasisLayer, Embedder,
-                    EmbeddingBlock, InteractionBlock, OutputBlock)
+from dimenet.layers import (BesselBasisLayer, SphericalBasisLayer, Embedder,
+                            EmbeddingBlock, InteractionBlock, OutputBlock)
 from torch_sparse import SparseTensor
 from torch_scatter import scatter
 
