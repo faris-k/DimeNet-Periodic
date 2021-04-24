@@ -11,7 +11,7 @@ This work was supported by funding from the Undergraduate Research Opportunities
 ## Usage
 Run `data_parsing.py` first to create parsed datasets from the Matbench benchmark datasets. Then run `train.py`.
 
-### Issues
-On some systems, there may be incompatibilities between PyTorch Geometric and [Pymatgen](https://github.com/materialsproject/pymatgen) installed to the same environment. At least, this was the case with my testing system. To get around this, create two separate environments:
+### Possible Compatibility Issues
+On some systems, there may be incompatibilities between PyTorch Geometric and [Pymatgen](https://github.com/materialsproject/pymatgen) installed to the same environment. At least, this was the case with my testing system. To get around this, I suggest create two separate environments:
 * A data parsing environment with Pymatgen installed to run `data_parsing.py`. With Anaconda, start with a new environment. Then, install [pymatgen](https://pymatgen.org/installation.html#step-3-install-pymatgen) and [matminer](https://hackingmaterials.lbl.gov/matminer/installation.html). See `parse_requirements.txt` and `cif-parse.yml` for all dependencies.
 * An experimentation environment with PyTorch Geometric installed to run `train.py` and any other files. This will require [PyTorch](https://pytorch.org/get-started/locally/), then [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric#installation). See `train_requirements.txt` and `dimenet4.yml` for all dependencies.
