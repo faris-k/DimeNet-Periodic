@@ -9,4 +9,4 @@ Performance on predicting materials properties is done using the [Matbench bench
 This work was supported by funding from the Undergraduate Research Opportunities Program at the University of Utah. Please note that this is very much a work in progress.
 
 ## Usage
-Run `data.py` first to create datasets. Then run `train.py`.
+Run `data_parsing.py` first to create datasets. Then run `train.py`.
