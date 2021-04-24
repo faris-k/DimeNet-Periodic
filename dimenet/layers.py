@@ -98,7 +98,7 @@ class Embedder(Module):
         self.d_model = d_model
         self.compute_device = torch.device('cuda')
 
-        mat2vec = 'mat2vec.csv'  # element embedding
+        mat2vec = 'data/mat2vec.csv'  # element embedding
 
         cbfv = pd.read_csv(mat2vec, index_col=0).values
         feat_size = cbfv.shape[-1]
