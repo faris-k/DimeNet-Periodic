@@ -13,5 +13,5 @@ Run `data_parsing.py` first to create parsed datasets from the Matbench benchmar
 
 ### Issues
 On some systems, there may be incompatibilities between PyTorch Geometric and [Pymatgen](https://github.com/materialsproject/pymatgen) installed to the same environment. At least, this was the case with my testing system. To get around this, create two separate environments:
-* A data parsing environment with Pymatgen installed to run `data_parsing.py`. See `parse_requirements.txt` and `cif-parsing.yml`.
-* An experimentation environment with PyTorch Geometric installed to run `train.py` and any other files. See `train_requirements.txt` and `dimenet4.yml`.
+* A data parsing environment with Pymatgen installed to run `data_parsing.py`. See `parse_requirements.txt` and `cif-parsing.yml` for dependencies.
+* An experimentation environment with PyTorch Geometric installed to run `train.py` and any other files. See `train_requirements.txt` and `dimenet4.yml` for dependencies.
