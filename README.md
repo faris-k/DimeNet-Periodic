@@ -10,3 +10,8 @@ This work was supported by funding from the Undergraduate Research Opportunities
 
 ## Usage
 Run `data_parsing.py` first to create datasets. Then run `train.py`.
+
+## Issues
+On some systems, there may be incompatibilities between PyTorch Geometric and [Pymatgen](https://github.com/materialsproject/pymatgen) installed to the same environment. At least, this was the case with my testing system. To get around this, create two separate environments:
+* A data parsing environment with Pymatgen installed to run `data_parsing.py`.
+* An experimentation environment with PyTorch Geometric installed to run `train.py` and any other files.
