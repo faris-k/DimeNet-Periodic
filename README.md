@@ -7,3 +7,6 @@ The focus of this work is to apply DimeNet's directional message-passing to peri
 Performance on predicting materials properties is done using the [Matbench benchmark dataset](https://hackingmaterials.lbl.gov/automatminer/datasets.html) for materials data.
 
 This work was supported by funding from the Undergraduate Research Opportunities Program at the University of Utah. Please note that this is very much a work in progress.
+
+## Usage
+Run data.py first to create datasets. Then run train.py.
