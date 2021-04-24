@@ -9,7 +9,7 @@ Materials data from the [Matbench benchmark dataset](https://hackingmaterials.lb
 This work was supported by funding from the Undergraduate Research Opportunities Program at the University of Utah. Please note that this is very much a work in progress.
 
 ## Usage
-Run `data_parsing.py` first to create datasets. Then run `train.py`.
+Run `data_parsing.py` first to create parsed datasets from the Matbench benchmark datasets. Then run `train.py`.
 
 ## Issues
 On some systems, there may be incompatibilities between PyTorch Geometric and [Pymatgen](https://github.com/materialsproject/pymatgen) installed to the same environment. At least, this was the case with my testing system. To get around this, create two separate environments:
