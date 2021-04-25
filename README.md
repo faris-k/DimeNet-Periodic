@@ -9,7 +9,7 @@ Materials data from the [Matbench benchmark dataset](https://hackingmaterials.lb
 This work was supported by funding from the Undergraduate Research Opportunities Program at the University of Utah. Please note that this is very much a work in progress.
 
 ## Usage
-Run `data_parsing.py` first to create parsed datasets from the Matbench benchmark datasets. Then run `train.py`.
+Run `data_parsing.py` first to create parsed datasets from the Matbench benchmark datasets. I suggest parsing only the smaller Matbench datasets first. Then run `train.py`. Training may be a little slow, since DimeNet creates fairly large graph representations of data. I suggest keeping batch size small (16 or less) to avoid CUDA memory issues.
 
 ### Possible Compatibility Issues
 On some systems, there may be incompatibilities between PyTorch Geometric and [Pymatgen](https://github.com/materialsproject/pymatgen) installed to the same environment. At least, this was the case with my testing system. To get around this, I suggest create two separate environments:
