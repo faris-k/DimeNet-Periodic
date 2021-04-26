@@ -47,7 +47,7 @@ def cif_parse(dataset):
     return all_data
 
 
-for dataset in datasets:
+for dataset in small_datasets:  # highly suggest parsing small first
     parsed = cif_parse(dataset)
     np.save(f'{dataset}.npy', parsed)
     print(f'\n{dataset} parsed!\n')
