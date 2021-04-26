@@ -31,7 +31,8 @@ def cif_parse(dataset):
                 break
 
         r = 9
-        while ((len(sites) < 80) or (len(sites) < (struct.num_sites * 2))):
+        # while ((len(sites) < 80) or (len(sites) < (struct.num_sites * 2))):
+        while (len(sites) < 80):
             neighbors = get_neighbors(struct, r)
             sites = neighbors[0]
             r += 1
