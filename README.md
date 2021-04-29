@@ -11,6 +11,8 @@ This work was supported by funding from the Undergraduate Research Opportunities
 ## Usage
 Run `data_parsing.py` first to create parsed datasets from the Matbench benchmark datasets. I suggest parsing only the smaller Matbench datasets first. Then run `train.py`. Training may be a little slow, since DimeNet creates fairly large graph representations of data. I suggest keeping batch size small (16 or less) to avoid CUDA memory issues.
 
+A Google Colab notebook is provided in `New_Dimenet.ipynb` that shows an entire training run. In the notebook, datasets are loaded onto Google Drive, so running the file as-is won't work without first correcting the file directories to suit your needs.
+
 ### Possible Compatibility Issues
 On some systems, there may be incompatibilities between PyTorch Geometric and [Pymatgen](https://github.com/materialsproject/pymatgen) installed to the same environment. At least, this was the case with my testing system. To get around this, I suggest create two separate environments:
 * A data parsing environment with Pymatgen installed to run `data_parsing.py`. With Anaconda, start with a new environment. Then, install [pymatgen](https://pymatgen.org/installation.html#step-3-install-pymatgen) and [matminer](https://hackingmaterials.lbl.gov/matminer/installation.html). See `parse_requirements.txt` and `cif-parse.yml` for all dependencies.
