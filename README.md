@@ -9,7 +9,7 @@ Materials data from the [Matbench benchmark dataset](https://hackingmaterials.lb
 This work was supported by funding from the Undergraduate Research Opportunities Program at the University of Utah. Please note that this is very much a work in progress.
 
 ## Performance Metrics
-Performance is benchmarked as described by the Automatminer paper.
+Matbench datasets were split using five-fold nested cross-validation as described by [Matbench v0.1 documentation](https://hackingmaterials.lbl.gov/automatminer/datasets.html#benchmarking-and-reporting-your-algorithm).
 
 |Matbench Property|MAE|
 |---|---|
