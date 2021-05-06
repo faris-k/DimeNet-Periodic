@@ -8,6 +8,13 @@ Materials data from the [Matbench benchmark dataset](https://hackingmaterials.lb
 
 This work was supported by funding from the Undergraduate Research Opportunities Program at the University of Utah. Please note that this is very much a work in progress.
 
+## Performance Metrics
+Performance is benchmarked as described by the Automatminer paper.
+
+|Matbench Property|MAE|
+|---|---|
+|DFT Exfoliation Energy|44.846|
+
 ## Usage
 Run `data_parsing.py` first to create parsed datasets from the Matbench benchmark datasets. I suggest parsing only the smaller Matbench datasets first. Then run `train.py`. Training may be a little slow, since DimeNet creates fairly large graph representations of data. I suggest keeping batch size small (16 or less) to avoid CUDA memory issues.
 
