@@ -11,9 +11,9 @@ This work was supported by funding from the Undergraduate Research Opportunities
 ## Performance Metrics
 Matbench datasets were split using five-fold nested cross-validation as described by [Matbench v0.1 documentation](https://hackingmaterials.lbl.gov/automatminer/datasets.html#benchmarking-and-reporting-your-algorithm).
 
-|Matbench Property|MAE|
-|---|---|
-|DFT Exfoliation Energy|44.846|
+|Matbench Dataset|Target Property|MAE|
+|---|---|---|
+|`matbench_jdft2d`|DFT Exfoliation Energy|44.846|
 
 ## Usage
 Run `data_parsing.py` first to create parsed datasets from the Matbench benchmark datasets. I suggest parsing only the smaller Matbench datasets first. Then run `train.py`. Training may be a little slow, since DimeNet creates fairly large graph representations of data. I suggest keeping batch size small (16 or less) to avoid CUDA memory issues.
