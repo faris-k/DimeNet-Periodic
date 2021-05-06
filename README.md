@@ -13,7 +13,7 @@ Matbench datasets were split using five-fold nested cross-validation as describe
 
 |Matbench Dataset|Target Property|MAE|
 |---|---|---|
-|`matbench_jdft2d`|DFT Exfoliation Energy|44.846|
+|`matbench_jdft2d`|DFT Exfoliation Energy|44.846 meV/atom|
 
 ## Usage
 Run `data_parsing.py` first to create parsed datasets from the Matbench benchmark datasets. I suggest parsing only the smaller Matbench datasets first. Then run `train.py`. Training may be a little slow, since DimeNet creates fairly large graph representations of data. I suggest keeping batch size small (16 or less) to avoid CUDA memory issues.
