@@ -2,9 +2,7 @@
 
 This repository is a PyTorch version of [DimeNet++](https://github.com/klicperajo/dimenet). It is based on the [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric) implementation of DimeNet with a few corrections and updates from the TensorFlow repo to reflect the status of DimeNet++.
 
-The focus of this work is to apply DimeNet's directional message-passing to periodic systems (inorganic crystals). [mat2vec embeddings](https://github.com/materialsintelligence/mat2vec) are used as the only additional feature to DimeNet++, which normally uses just structural and compositional information to predict properties.
-
-Materials data from the [Matbench benchmark dataset](https://hackingmaterials.lbl.gov/automatminer/datasets.html) is used to assess performance in predicting materials properties.
+The focus of this work is to apply DimeNet's directional message-passing to periodic systems (inorganic crystals). Materials data from the [Matbench benchmark dataset](https://hackingmaterials.lbl.gov/automatminer/datasets.html) is used to assess performance in predicting materials properties.
 
 This work was supported by funding from the Undergraduate Research Opportunities Program at the University of Utah. Please note that this is very much a work in progress.
 
