@@ -12,7 +12,7 @@ Matbench datasets were split using five-fold nested cross-validation as describe
 |Matbench Dataset|Target Property|MAE|
 |---|---|---|
 |`matbench_jdft2d`|DFT Exfoliation Energy|44.846 meV/atom|
-|`matbench_dielectric`|Refractive Index|0.352 (unitless)|
+|`matbench_dielectric`|Refractive Index|0.344 (unitless)|
 |`matbench_phonons`|Phonon Peak|51.074 (1/cm)|
 |`matbench_log_kvrh`|Bulk Modulus (log10)|0.0666 (log(GPa))|
 
