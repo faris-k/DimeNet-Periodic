@@ -16,6 +16,8 @@ Matbench datasets were split using five-fold nested cross-validation as describe
 |`matbench_jdft2d`|DFT Exfoliation Energy|44.846 meV/atom|
 |`matbench_dielectric`|Refractive Index|0.352 (unitless)|
 |`matbench_phonons`|Phonon Peak|51.074 (1/cm)|
+|`matbench_log_kvrh`|Bulk Modulus (log10)|0.0666 (log(GPa))|
+
 
 ## Usage
 Run `data_parsing.py` first to create parsed datasets from the Matbench benchmark datasets. I suggest parsing only the smaller Matbench datasets first. Then run `train.py`. Training may be a little slow, since DimeNet creates fairly large graph representations of data. I suggest keeping batch size small (16 or less) to avoid CUDA memory issues.
