@@ -16,6 +16,7 @@ Matbench datasets were split using five-fold nested cross-validation as describe
 |`matbench_phonons`|Phonon Peak|51.074 (1/cm)|
 |`matbench_log_kvrh`|Bulk Modulus (log10)|0.0666 (log(GPa))|
 |`matbench_log_gvrh`|Shear Modulus (log10)|0.0900 (log(GPa))|
+|`matbench_perovskites`|Formation Energy|0.0437 (eV/unit cell)|
 
 
 ## Usage
