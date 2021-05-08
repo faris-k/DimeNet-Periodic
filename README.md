@@ -7,7 +7,7 @@ The focus of this work is to apply DimeNet's directional message-passing to peri
 This work was supported by funding from the Undergraduate Research Opportunities Program at the University of Utah. Please note that this is very much a work in progress.
 
 ## Performance Metrics
-Matbench datasets were split using five-fold nested cross-validation as described by [Matbench v0.1 documentation](https://hackingmaterials.lbl.gov/automatminer/datasets.html#benchmarking-and-reporting-your-algorithm).
+Matbench datasets were split using five-fold nested cross-validation as described by [Matbench v0.1 documentation](https://hackingmaterials.lbl.gov/automatminer/datasets.html#benchmarking-and-reporting-your-algorithm). Each fold has a 60-20-20 split for training, validation, and test data respectively.
 
 |Matbench Dataset|Target Property|MAE|
 |---|---|---|
@@ -20,7 +20,7 @@ Matbench datasets were split using five-fold nested cross-validation as describe
 
 
 ## Usage
-Run `data_parsing.py` first to create parsed datasets from the Matbench benchmark datasets. I suggest parsing only the smaller Matbench datasets first. Then run `train.py`. Training may be a little slow, since DimeNet creates fairly large graph representations of data. I suggest keeping batch size small (16 or less) to avoid CUDA memory issues.
+Run `data_parsing.py` first to create parsed datasets from the Matbench benchmark datasets. I suggest parsing only the smaller Matbench datasets first. Then run `train.py`. Training may be a little slow, since DimeNet's message passing scheme is computationally expensive. I suggest keeping batch size small (16 or less) to avoid CUDA memory issues. For reference, it takes 14.54 GB of VRAM for a batch size of 16 on the `matbench_mp_gap` dataset (about 63,680 structures in the training set).
 
 A Google Colab notebook is provided in `New_Dimenet.ipynb` that shows an entire training run. In the notebook, datasets are loaded onto Google Drive, so running the file as-is won't work without first correcting the file directories to suit your needs.
 
